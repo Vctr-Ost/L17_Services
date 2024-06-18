@@ -6,7 +6,6 @@ from table_crud import tbl_schema_str_creator_csv, create_or_replace_tbl
 
 
 app = Flask(__name__)
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'keys/gcp_key.json'
 
 client = bigquery.Client()              # init clients
 storage_client = storage.Client()
